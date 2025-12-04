@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": 123,
+      "name": "Utilisateur Test",
+      "email": "test@courriel.com",
+      "password": "123",
+      "created": "2024-03-22T05:42:18.895Z"
+    }
+  ]
+}
