@@ -1,7 +1,7 @@
 import fs from 'fs-extra';
 import logger from 'jet-logger';
 import childProcess from 'child_process';
-
+/* eslint-disable */
 /**
  * Start
  */
@@ -14,6 +14,8 @@ import childProcess from 'child_process';
     // Copy
     await copy('./src/public', './dist/public');
     await copy('./src/views', './dist/views');
+    // Mettre en commentaire
+    // await copy('./src/repos/database.json', './dist/repos/database.json');
     await copy('./temp/config.js', './config.js');
     await copy('./temp/src', './dist');
     await remove('./temp/');
