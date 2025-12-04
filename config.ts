@@ -18,5 +18,5 @@ const NODE_ENV = process.env.NODE_ENV ?? 'development';
 
 // Configure moduleAlias
 if (__filename.endsWith('js')) {
-  moduleAlias.addAlias('@src', __dirname + '/dist');
+  moduleAlias.addAlias('@src', __dirname);
 }

@@ -1,7 +1,7 @@
 import logger from 'jet-logger';
 import { connect } from 'mongoose';
 
-import ENV from '../src/common/constants/ENV';
+import ENV from '@src/common/constants/ENV';
 import server from './server';
 
 /******************************************************************************
