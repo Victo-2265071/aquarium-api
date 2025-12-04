@@ -1,11 +1,14 @@
 {
   "name": "planificateur-aquarium-api",
   "version": "0.0.0",
+  "_moduleAliases": {
+    "@src": "dist"
+  },
   "scripts": {
     "build": "ts-node ./scripts/build.ts",
     "clean-install": "rm -rf ./node_modules && rm -r package-lock.json && npm i",
     "dev": "node --env-file=.env -r ts-node/register ./src",
-    "start": "node -r ./dist/config.js ./dist",
+    "start": "node -r module-alias/register -r ./dist/config.js ./dist",
     "dev:hot": "nodemon --exec \"npm run dev\" --watch ./src --ext .ts",
     "lint": "eslint .",
     "test": "NODE_ENV=test vitest",
