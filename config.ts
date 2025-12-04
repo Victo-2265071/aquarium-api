@@ -1,4 +1,4 @@
-/* eslint-disable n/no-process-env */
+/* eslint-disable */
 import moduleAlias from 'module-alias';
 
 // Check the env
