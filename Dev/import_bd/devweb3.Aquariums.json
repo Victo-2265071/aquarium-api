@@ -1,0 +1,79 @@
+[
+  {
+    "_id": {
+      "$oid": "69278ae3b61a01a05081b75c"
+    },
+    "nom": "Océan Pacifique",
+    "volume": 200,
+    "eau_salee": false,
+    "date_creation": {
+      "$date": "2025-11-26T00:00:00.000Z"
+    },
+    "poissons": [
+      {
+        "poisson_nom": "Guppy",
+        "quantite": 3,
+        "_id": {
+          "$oid": "69278ae3b61a01a05081b75d"
+        }
+      },
+      {
+        "poisson_nom": "Néon-Tetra",
+        "quantite": 2,
+        "_id": {
+          "$oid": "69278ae3b61a01a05081b75e"
+        }
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6928b3da121ca5932f2d2b01"
+    },
+    "nom": "Aquarium Salon",
+    "volume": 100,
+    "eau_salee": true,
+    "date_creation": {
+      "$date": "2025-11-27T21:12:46.367Z"
+    },
+    "poissons": [
+      {
+        "poisson_nom": "Poisson-clown",
+        "quantite": 2,
+        "_id": {
+          "$oid": "6928bece121ca5932f2d2c69"
+        }
+      },
+      {
+        "poisson_nom": "Gramma loreto",
+        "quantite": 1,
+        "_id": {
+          "$oid": "6928bece121ca5932f2d2c6a"
+        }
+      }
+    ],
+    "__v": 2
+  },
+  {
+    "_id": {
+      "$oid": "6928b419121ca5932f2d2b4b"
+    },
+    "nom": "Aquarium Marin",
+    "volume": 50,
+    "eau_salee": true,
+    "date_creation": {
+      "$date": "2025-11-27T20:27:05.583Z"
+    },
+    "poissons": [
+      {
+        "poisson_nom": "Poisson-clown",
+        "quantite": 2,
+        "_id": {
+          "$oid": "6928b419121ca5932f2d2b4c"
+        }
+      }
+    ],
+    "__v": 0
+  }
+]

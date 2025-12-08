@@ -1,65 +1,22 @@
-## About
+## Procédure d'installation de l'API sur un poste local
 
-This project was created with [express-generator-typescript](https://github.com/seanpmaxwell/express-generator-typescript).
+Copier le .env.example, en faire un .env à la racide du projet. Changer la variable "MONGODB" pour le string de connection de MongoDB sur le poste local.
+Noter que l'exemple "mongodb://localhost:27017/devweb3" termine par devweb3 pour spécifier quelle BD utiliser.
+Spécifier également le host, le port.
 
-**IMPORTANT** for demo purposes I had to disable `helmet` in production. In any real world app you should change these 3 lines of code in `src/server.ts`:
-```ts
-// eslint-disable-next-line n/no-process-env
-if (!process.env.DISABLE_HELMET) {
-  app.use(helmet());
-}
-```
+## Procédure de création de la base de données
 
-To just this:
-```ts
-app.use(helmet());
-```
+Créer une BD sur MongoDB avec le même nom de BD qui termine l'URL de connection.
+Y créer les tables Aquariums et Poissons avec les données de bases trouvés sous /Dev/import_bd.
 
+## Script pour lancer l'API :
 
-## Available Scripts
+Lancer le projet avec "npm run dev"
 
-### `npm run clean-install`
+## URL de l'api publiée :
 
-Remove the existing `node_modules/` folder, `package-lock.json`, and reinstall all library modules.
+https://aquarium-api-anhfabd8c2f8a6b9.canadacentral-01.azurewebsites.net
 
+## URL de la base de données en ligne :
 
-### `npm run dev` or `npm run dev:hot` (hot reloading)
-
-Run the server in development mode.<br/>
-
-**IMPORTANT** development mode uses `swc` for performance reasons which DOES NOT check for typescript errors. Run `npm run type-check` to check for type errors. NOTE: you should use your IDE to prevent most type errors.
-
-
-### `npm test` or `npm run test:hot` (hot reloading)
-
-Run all unit-tests.
-
-
-### `npm test -- "name of test file" (i.e. users).`
-
-Run a single unit-test.
-
-
-### `npm run lint`
-
-Check for linting errors.
-
-
-### `npm run build`
-
-Build the project for production.
-
-
-### `npm start`
-
-Run the production build (Must be built first).
-
-
-### `npm run type-check`
-
-Check for typescript errors.
-
-
-## Additional Notes
-
-- If `npm run dev` gives you issues with bcrypt on MacOS you may need to run: `npm rebuild bcrypt --build-from-source`. 
+mongodb+srv://devweb3user:Qwerty123@aquarium.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000
