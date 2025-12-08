@@ -17,6 +17,11 @@ Lancer le projet avec "npm run dev"
 
 https://aquarium-api-anhfabd8c2f8a6b9.canadacentral-01.azurewebsites.net
 
+## Documentation de l'api :
+
+URL_API/api/docs
+https://aquarium-api-anhfabd8c2f8a6b9.canadacentral-01.azurewebsites.net/api/docs/
+
 ## URL de la base de données en ligne :
 
 mongodb+srv://devweb3user:Qwerty123@aquarium.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000
